@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thanos Snap</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="content">
-        <!-- <img src="myself3.png" height="600"> -->
-        <button id="start-btn">Snap!</button>
+    <div id='object' class="test">
+        <h1>To be killed</h1>
     </div>
-    <thanos-snap></thanos-snap>
+    <button id='weapon'>Snap</button>
+
+    <thanos-snap object = 'object' weapon = 'weapon'></thanos-snap>
     <script src="thanos.js"></script>
 </body>
 </html> 
