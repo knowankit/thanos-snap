@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+}
+  .content {
+      height: auto;
+      width: auto;
+      /* display: inline-block; */
+      /* background-color: black; */
+  }
+  .dust {
+    position: absolute;
+  }
