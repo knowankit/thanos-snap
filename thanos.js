@@ -5,7 +5,7 @@ class ThanosSnap extends HTMLElement {
     }
     connectedCallback() {
         loadCss(this);
-        loadExternal(['html2canvas.js', 'chance.js', 'jquery-ui.min.js']).then(() => {
+        loadExternal(['html2canvas.js', 'chance.js']).then(() => {
             let weapon = this.hasAttribute('weapon') ? this.getAttribute('weapon') : false
             let object = this.hasAttribute('object') ? this.getAttribute('object') : false
             if(weapon && object) {  
@@ -26,7 +26,6 @@ function loadCss(file) {
 }
 
 function loadExternal(files) {
-    // debugger
     console.log(files)
     const promises = files.map(x => {
         return createPromise(x)
@@ -50,7 +49,7 @@ function createPromise(item) {
 function createScript(file) {
     const script = document.createElement('script')
     script.setAttribute('type', 'text/javascript')
-    script.setAttribute('src', `script/${file}`)
+    script.setAttribute('src', `scripts/${file}`)
 
     return script;
 }
@@ -125,7 +124,6 @@ function initial(id, buttonId) {
             var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
             var pixelArr = imageData.data;
             createBlankImageData(imageData, canvasCount, imageDataArray);
-            debugger
             //put pixel info to imageDataArray (Weighted Distributed)
             for (let i = 0; i < pixelArr.length; i += 4) {
                 //find the highest probability canvas the pixel should be in
@@ -142,6 +140,7 @@ function initial(id, buttonId) {
             div.innerHTML = ''
             div.style.height = `${height}px`;
             div.style.width = `${width}px`;
+            div.classList.add('iron-man');
             //create canvas for each imageData and append to target element
             for (let i = 0; i < canvasCount; i++) {
                 let c = newCanvasFromImageData(imageDataArray[i], canvas.width, canvas.height);
@@ -151,7 +150,7 @@ function initial(id, buttonId) {
                 //   $("body").append(c);
             }
             //clear all children except the canvas
-            $(".content").children().not(".dust").fadeOut(100);
+            $(`#${id}`).children().not(".dust").fadeOut(5000);
             //apply animation
             $(".dust").each(function (index) {
                 animateBlur($(this), 0.8, 800);
