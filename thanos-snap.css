@@ -1,0 +1,26 @@
+/* Important to add in your css file */
+.dust {
+    position: absolute;
+  }
+  * {
+      margin: 0px;
+      overflow-x: hidden;
+  }
+.iron-man {
+    display: inline-block;
+}
+  /* Till here */
+
+  .test{
+      height: auto;
+      width: auto;
+  }
+
+  .btn {
+      border-radius: 0;
+      padding: 10px;
+  }
+
+  body{
+      background-color: black;
+  }
