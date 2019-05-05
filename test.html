@@ -12,8 +12,8 @@
 <body>
 
   <div class="content">
-    <img src="myself3.png">
-    
+    <!-- <img src="myself3.png"> -->
+    <h1>jhgjhghgjg</h1>
   </div>   
   <button id="start-btn">Snap!</button>
 
@@ -39,19 +39,19 @@ $("#start-btn").click(function(){
       a[i+2] = pixelArr[i+2];
       a[i+3] = pixelArr[i+3]; 
     }
-    const div = document.querySelector(".content")
-    let height = div.clientHeight;
-    let width = div.clientWidth
-    div.innerHTML = ''
-    div.style.height = `${height}px`;
-    div.style.width = `${width}px`;
+    // const div = document.querySelector(".content")
+    // let height = div.clientHeight;
+    // let width = div.clientWidth
+    // div.innerHTML = ''
+    // div.style.height = `${height}px`;
+    // div.style.width = `${width}px`;
     //create canvas for each imageData and append to target element
     for (let i = 0; i < canvasCount; i++) {
       let c = newCanvasFromImageData(imageDataArray[i], canvas.width, canvas.height);
       c.classList.add("dust");
-      div.appendChild(c);
-    //   c.classList.add('content');
-    //   $("body").append(c);
+      // div.appendChild(c);
+      // c.classList.add('content');
+      $("body").append(c);
     }
     //clear all children except the canvas
     $(".content").children().not(".dust").fadeOut(100);

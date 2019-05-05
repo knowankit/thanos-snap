@@ -137,7 +137,6 @@ function initial(id, buttonId) {
                 a[i + 3] = pixelArr[i + 3];
             }
             const div = document.querySelector(`#${id}`)
-            console.log(div)
             let height = div.clientHeight;
             let width = div.clientWidth
             div.innerHTML = ''
