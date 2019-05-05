@@ -5,7 +5,7 @@ A custom web component  to make your html element disappear with one snap of tha
 ## Installation
 ### Install via npm:
 
-`$ npm install thanos-snap`
+`$ npm install thanos-end-game`
 
 ## Usage
 To use thanos-snap in your website, just add the `thanos.min.js` into your document's `<head>`. That's it! You've thanos power now. Please use it wisely.
