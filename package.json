@@ -1,5 +1,5 @@
 {
-  "name": "thanosjs",
+  "name": "thanos-end-game",
   "version": "1.0.0",
   "description": "A custom web component  to make your html element disappear with one snap of thanos. But unlike thanos power, this componentdoes not bring back the dead. Use it wisely. :)",
   "main": "thanos.min.js",
@@ -25,6 +25,7 @@
     "marvel",
     "end-game",
     "avengers",
-    "iron-man"
+    "iron-man",
+    "thanosjs"
   ]
 }
