@@ -1,6 +1,5 @@
 # thanos-snap
-It is a custom web component designed to make your html page have a thanos effect. For better view
-google `THANOS` and click the golden hand.
+A custom web component  to make your html element disappear with one snap of thanos. But unlike thanos power, this componentdoes not bring back the dead. Use it wisely. :)
 
 ![Hover gif](https://github.com/knowankit/thanos-snap/blob/master/thanos-hand.gif)
 ## Installation

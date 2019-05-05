@@ -1,8 +1,8 @@
 {
   "name": "thanos-snap",
   "version": "1.0.0",
-  "description": "A web component of thanos to make your html element disappear with one snap of thanos. But unlike thanos power, this componentdoes not bring back the dead. Use it wisely. :)",
-  "main": "index.js",
+  "description": "A custom web component  to make your html element disappear with one snap of thanos. But unlike thanos power, this componentdoes not bring back the dead. Use it wisely. :)",
+  "main": "thanos.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
