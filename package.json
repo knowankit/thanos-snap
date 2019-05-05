@@ -1,7 +1,7 @@
 {
   "name": "thanos-snap",
   "version": "1.0.0",
-  "description": "",
+  "description": "A web component of thanos to make your html element disappear with one snap of thanos. But unlike thanos power, this componentdoes not bring back the dead. Use it wisely. :)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/knowankit/thanos-snap.git"
   },
-  "author": "",
+  "author": "Ankit",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/knowankit/thanos-snap/issues"
@@ -18,5 +18,13 @@
   "homepage": "https://github.com/knowankit/thanos-snap#readme",
   "dependencies": {
     "html2canvas": "^1.0.0-rc.1"
-  }
+  },
+  "keywords": [
+    "thanos",
+    "thanos-snap",
+    "marvel",
+    "end-game",
+    "avengers",
+    "iron-man"
+  ]
 }
