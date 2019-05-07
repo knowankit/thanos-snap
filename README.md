@@ -1,5 +1,5 @@
-# thanos-snap
-A custom web component  to make your html element disappear with one snap of thanos. But unlike thanos power, this componentdoes not bring back the dead. Use it wisely. :)
+# thanos-snap by [Ankit](https://knowankit.com)
+A custom web component to make your html element disappear with one snap of thanos. But unlike thanos power, this component does not bring back the dead. Use it wisely. :)
 
 ![Hover gif](https://github.com/knowankit/thanos-snap/blob/master/thanos-hand.gif)
 ## Installation
